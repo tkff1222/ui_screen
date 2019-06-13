@@ -16,8 +16,8 @@ class _M004State extends State<M004> {
         child: ListView(
           children: <Widget>[
             new Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.max,
+                //crossAxisAlignment: CrossAxisAlignment.start,
+                //mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   IconButton(
                       icon: Icon(Icons.arrow_back, color: Colors.black),
@@ -47,11 +47,13 @@ class _M004State extends State<M004> {
                       )
                     ],
                   ),
+                  //Progress bar
                   Container(
                     height: 91,
                     width: 375,
                     child: new Text('This is the progress bar...'),
                   ),
+                  //Check out - have a card
                   Container(
                     height: 590,
                     width: 375,
@@ -96,6 +98,7 @@ class _M004State extends State<M004> {
                       ],
                     ),
                   ),
+                  //check out - check out 1st time
                   Container(
                     height: 187,
                     width: 334,
@@ -113,6 +116,135 @@ class _M004State extends State<M004> {
                             icon: Icon(Icons.credit_card),
                             onPressed: null
                         )
+                      ],
+                    ),
+                  ),
+                  //check out 0
+                  Container(
+                    height: 590,
+                    width: 375,
+                    child: new Column(
+                      children: <Widget>[
+                        new Text( "Card Number", style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          fontFamily: "Avenir",
+                          color: Color(0xFF8F9AA2),
+                        ),),
+                        new TextField(
+                          decoration: new InputDecoration(
+                              hintText: '1111 1111 1111 1111',
+                              hintStyle: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "Avenir",
+                                color: Color(0xFFD8DFE5),
+                              ),
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color(0xFFD8DFE5) , width: 1),
+                                borderRadius: BorderRadius.circular(2),
+                              )
+                          ),
+                        ),
+                        new Text("Expiry Date", style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          fontFamily: "Avenir",
+                          color: Color(0xFF8F9AA2),
+                        ),),
+                        new TextField(
+                          decoration: new InputDecoration(
+                              hintText: 'MM/YY',
+                              hintStyle: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "Avenir",
+                                color: Color(0xFFD8DFE5),
+                              ),
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color(0xFFD8DFE5) , width: 1),
+                                borderRadius: BorderRadius.circular(2),
+                              )
+                          ),
+                        ),
+                        new Text( "CCV", style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          fontFamily: "Avenir",
+                          color: Color(0xFF8F9AA2),
+                        ),),
+                        new TextField(
+                          decoration: new InputDecoration(
+                              hintText: '123',
+                              hintStyle: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w400,
+                                fontFamily: "Avenir",
+                                color: Color(0xFFD8DFE5),
+                              ),
+                              border: OutlineInputBorder(
+                                borderSide: BorderSide(color: Color(0xFFD8DFE5) , width: 1),
+                                borderRadius: BorderRadius.circular(2),
+                              )
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top:32),
+                          child: new Container(
+                            width: 108,
+                            height:40,
+                            decoration: new BoxDecoration(
+                                color: Color(0xFFFF7052),
+                                borderRadius: BorderRadius.circular(2),
+                                boxShadow: [
+                                  new BoxShadow(
+                                    color: Color(0xFFD7D7D7),
+                                    offset: new Offset(0, -2),
+                                    blurRadius: 11,
+                                  ),
+                                ]),
+                            child: new Container(
+                                width: 78,
+                                height:22,
+                                alignment: Alignment.center,
+                                child:new Text( "Proceed", style: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w400,
+                                  fontFamily: "Avenir",
+                                  color: Color(0xFFFFFFFF),
+                                ))
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  //check out 3
+                  Container(
+                    height: 590,
+                    width: 375,
+                    child: new Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: <Widget>[
+                        new Text( "Congratulations!", style: TextStyle(
+                          fontSize: 32,
+                          fontWeight: FontWeight.w900,
+                          fontFamily: "Avenir",
+                          color: Color(0xFFFF7052),
+                        ),),
+                        new Text( "Your shipment is on its way.", style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          fontFamily: "Avenir",
+                          color: Color(0xFF1D1D1D),
+                        ),),
+                        new Text( "View Order History", style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                          fontFamily: "Avenir",
+                          color: Color(0xFFFF7052),
+                        ),),
                       ],
                     ),
                   ),
