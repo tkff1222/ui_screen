@@ -131,29 +131,7 @@ class _H007aState extends State<H007a> {
                   color: Color(0xFF9B9B9B),
                 ),),
               ),
-              new Stack(
-                children: <Widget>[
-                  new Container(
-                      width: 108,
-                      height:108,
-                      decoration: new BoxDecoration(
-                        color: Color(0xFFEEEEEE),
-                      ),
-                      child: new Container()
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left:92),
-                    child: new Container(
-                        width: 16,
-                        height:16,
-                        alignment: Alignment.center,
-                        decoration: new BoxDecoration(
-                          color: Color(0xFFFF7B6E),
-                        ),
-                        child: new Text('X', style: TextStyle(color: Colors.white),),),
-                  ),
-                ],
-              ),
+              _buildViewPhoto(),
               Padding(
                 padding: const EdgeInsets.only(top:26),
                 child: new Container(
@@ -178,5 +156,31 @@ class _H007aState extends State<H007a> {
       ),
     );
   }
+}
+
+_buildViewPhoto() {
+  return Stack(
+      children: <Widget>[
+        new Container(
+            width: 108,
+            height:108,
+            decoration: new BoxDecoration(
+              color: Color(0xFFEEEEEE),
+            ),
+            child: new Container()
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left:92),
+          child: new Container(
+            width: 16,
+            height:16,
+            alignment: Alignment.center,
+            decoration: new BoxDecoration(
+              color: Color(0xFFFF7B6E),
+            ),
+            child: new Text('X', style: TextStyle(color: Colors.white),),),
+        ),
+      ],
+    );
 }
 
