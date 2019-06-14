@@ -16,8 +16,8 @@ class _M004State extends State<M004> {
         child: ListView(
           children: <Widget>[
             new Column(
-                //crossAxisAlignment: CrossAxisAlignment.start,
-                //mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   IconButton(
                       icon: Icon(Icons.arrow_back, color: Colors.black),
@@ -123,100 +123,105 @@ class _M004State extends State<M004> {
                   Container(
                     height: 590,
                     width: 375,
-                    child: new Column(
-                      children: <Widget>[
-                        new Text( "Card Number", style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
-                          fontFamily: "Avenir",
-                          color: Color(0xFF8F9AA2),
-                        ),),
-                        new TextField(
-                          decoration: new InputDecoration(
-                              hintText: '1111 1111 1111 1111',
-                              hintStyle: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400,
-                                fontFamily: "Avenir",
-                                color: Color(0xFFD8DFE5),
-                              ),
-                              border: OutlineInputBorder(
-                                borderSide: BorderSide(color: Color(0xFFD8DFE5) , width: 1),
-                                borderRadius: BorderRadius.circular(2),
-                              )
-                          ),
-                        ),
-                        new Text("Expiry Date", style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
-                          fontFamily: "Avenir",
-                          color: Color(0xFF8F9AA2),
-                        ),),
-                        new TextField(
-                          decoration: new InputDecoration(
-                              hintText: 'MM/YY',
-                              hintStyle: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400,
-                                fontFamily: "Avenir",
-                                color: Color(0xFFD8DFE5),
-                              ),
-                              border: OutlineInputBorder(
-                                borderSide: BorderSide(color: Color(0xFFD8DFE5) , width: 1),
-                                borderRadius: BorderRadius.circular(2),
-                              )
-                          ),
-                        ),
-                        new Text( "CCV", style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w400,
-                          fontFamily: "Avenir",
-                          color: Color(0xFF8F9AA2),
-                        ),),
-                        new TextField(
-                          decoration: new InputDecoration(
-                              hintText: '123',
-                              hintStyle: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400,
-                                fontFamily: "Avenir",
-                                color: Color(0xFFD8DFE5),
-                              ),
-                              border: OutlineInputBorder(
-                                borderSide: BorderSide(color: Color(0xFFD8DFE5) , width: 1),
-                                borderRadius: BorderRadius.circular(2),
-                              )
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top:32),
-                          child: new Container(
-                            width: 108,
-                            height:40,
-                            decoration: new BoxDecoration(
-                                color: Color(0xFFFF7052),
-                                borderRadius: BorderRadius.circular(2),
-                                boxShadow: [
-                                  new BoxShadow(
-                                    color: Color(0xFFD7D7D7),
-                                    offset: new Offset(0, -2),
-                                    blurRadius: 11,
-                                  ),
-                                ]),
-                            child: new Container(
-                                width: 78,
-                                height:22,
-                                alignment: Alignment.center,
-                                child:new Text( "Proceed", style: TextStyle(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 18),
+                      child: new Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          new Text( "Card Number", style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                            fontFamily: "Avenir",
+                            color: Color(0xFF8F9AA2),
+                          ),),
+                          new TextField(
+                            decoration: new InputDecoration(
+                                hintText: '1111 1111 1111 1111',
+                                hintStyle: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: "Avenir",
-                                  color: Color(0xFFFFFFFF),
-                                ))
+                                  color: Color(0xFFD8DFE5),
+                                ),
+                                border: OutlineInputBorder(
+                                  borderSide: BorderSide(color: Color(0xFFD8DFE5) , width: 1),
+                                  borderRadius: BorderRadius.circular(2),
+                                )
                             ),
                           ),
-                        ),
-                      ],
+                          new Text("Expiry Date", style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                            fontFamily: "Avenir",
+                            color: Color(0xFF8F9AA2),
+                          ),),
+                          new TextField(
+                            decoration: new InputDecoration(
+                                hintText: 'MM/YY',
+                                hintStyle: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w400,
+                                  fontFamily: "Avenir",
+                                  color: Color(0xFFD8DFE5),
+                                ),
+                                border: OutlineInputBorder(
+                                  borderSide: BorderSide(color: Color(0xFFD8DFE5) , width: 1),
+                                  borderRadius: BorderRadius.circular(2),
+                                )
+                            ),
+                          ),
+                          new Text( "CCV", style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                            fontFamily: "Avenir",
+                            color: Color(0xFF8F9AA2),
+                          ),),
+                          new TextField(
+                            decoration: new InputDecoration(
+                                hintText: '123',
+                                hintStyle: TextStyle(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w400,
+                                  fontFamily: "Avenir",
+                                  color: Color(0xFFD8DFE5),
+                                ),
+                                border: OutlineInputBorder(
+                                  borderSide: BorderSide(color: Color(0xFFD8DFE5) , width: 1),
+                                  borderRadius: BorderRadius.circular(2),
+                                )
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top:32),
+                            child: new Container(
+                              width: 108,
+                              height:40,
+                              decoration: new BoxDecoration(
+                                  color: Color(0xFFFF7052),
+                                  borderRadius: BorderRadius.circular(2),
+                                  boxShadow: [
+                                    new BoxShadow(
+                                      color: Color(0xFFD7D7D7),
+                                      offset: new Offset(0, -2),
+                                      blurRadius: 11,
+                                    ),
+                                  ]),
+                              child: new Container(
+                                  width: 78,
+                                  height:22,
+                                  alignment: Alignment.center,
+                                  child:new Text( "Proceed", style: TextStyle(
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.w400,
+                                    fontFamily: "Avenir",
+                                    color: Color(0xFFFFFFFF),
+                                  ))
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   //check out 3
