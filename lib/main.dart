@@ -9,6 +9,7 @@ import 'package:ui_screen/M004.dart';
 import 'package:ui_screen/M005.dart';
 import 'package:ui_screen/ON003.dart';
 import 'package:ui_screen/RegisterSalon.dart';
+import 'package:ui_screen/RegisterSalon2.dart';
 import 'package:ui_screen/SignUpSalon.dart';
 import 'package:ui_screen/TestScreen.dart';
 
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home:RegisterSalon(),
+      home:RegisterSalon2(),
       //home: TestScreen(),
     );
   }
