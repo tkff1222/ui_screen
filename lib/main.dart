@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui_screen/ExploreSalon.dart';
 import 'package:ui_screen/H003.dart';
 import 'package:ui_screen/H006.dart';
 import 'package:ui_screen/H007a.dart';
@@ -12,6 +13,7 @@ import 'package:ui_screen/RegisterSalon.dart';
 import 'package:ui_screen/RegisterSalon2.dart';
 import 'package:ui_screen/SignUpSalon.dart';
 import 'package:ui_screen/TestScreen.dart';
+import 'package:ui_screen/VenueSalon.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,7 +36,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home:RegisterSalon2(),
+      home:VenueSalon(),
       //home: TestScreen(),
     );
   }
