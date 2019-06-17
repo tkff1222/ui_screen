@@ -79,15 +79,7 @@ _buildProfileRow() {
                   color: Color(0xFF4A4A4A),
                 ),),
                 SizedBox(height: 5.0),
-                new Row(
-                  children: <Widget>[
-                    new Icon(Icons.star, color: Colors.orange,size: 15,),
-                    new Icon(Icons.star, color: Colors.orange,size: 15,),
-                    new Icon(Icons.star, color: Colors.orange,size: 15,),
-                    new Icon(Icons.star_border, color: Colors.orange,size: 15,),
-                    new Icon(Icons.star_border, color: Colors.orange,size: 15,),
-                  ],
-                ),
+                _buildRatingStar(),
               ],
             ),
           ),
@@ -121,6 +113,18 @@ _buildProfileRow() {
         height: 1,
         color: Colors.grey,
       ),
+    ],
+  );
+}
+
+_buildRatingStar() {
+  return new Row(
+    children: <Widget>[
+      new Icon(Icons.star, color: Colors.orange,size: 15,),
+      new Icon(Icons.star, color: Colors.orange,size: 15,),
+      new Icon(Icons.star, color: Colors.orange,size: 15,),
+      new Icon(Icons.star_border, color: Colors.orange,size: 15,),
+      new Icon(Icons.star_border, color: Colors.orange,size: 15,),
     ],
   );
 }
