@@ -86,11 +86,11 @@ class _M004State extends State<M004> {
                             height: 44,
                             width: 281.81,
                             decoration: BoxDecoration(
-                                border: Border.all(color: Colors.deepOrange)
+                                border: Border.all(color: Color(0xFFFF7B6E))
                             ),
                             alignment: Alignment.center,
                             child: new Text('Add another Card',style: TextStyle(
-                                color: Colors.deepOrange,
+                                color: Color(0xFFFF7B6E),
                                 fontSize: 16,
                                 fontFamily: 'Avenir')),
                           ),
@@ -103,13 +103,13 @@ class _M004State extends State<M004> {
                     height: 187,
                     width: 334,
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colors.deepOrange)
+                      border: Border.all(color: Color(0xFFFF7B6E))
                     ),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         new Text('Add a Card', style: new TextStyle(
-                            color: Colors.deepOrange,
+                            color: Color(0xFFFF7B6E),
                             fontFamily: "Avenir",
                             fontSize: 16),),
                         IconButton(

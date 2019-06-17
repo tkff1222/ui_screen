@@ -36,9 +36,9 @@ class _H007bState extends State<H007b> {
                     Container(
                         height: 108,
                         width: 108,
-                        decoration: BoxDecoration(border: Border.all(color: Colors.deepOrange)),
+                        decoration: BoxDecoration(border: Border.all(color: Color(0xFFFF7B6E))),
                         child: IconButton(
-                            icon: Icon(Icons.add, color: Colors.deepOrange),
+                            icon: Icon(Icons.add, color: Color(0xFFFF7B6E)),
                             onPressed: null
                         )
                     ),

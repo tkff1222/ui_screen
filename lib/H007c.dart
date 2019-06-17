@@ -130,7 +130,7 @@ _buildServices() {
                   height: 26,
                   width: 160,
                   alignment: Alignment.center,
-                  decoration: BoxDecoration(border: Border.all(color: Colors.deepOrange)),
+                  decoration: BoxDecoration(border: Border.all(color: Color(0xFFFF7B6E))),
                   child: new Text( "Edit", style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
