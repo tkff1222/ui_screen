@@ -11,65 +11,67 @@ class _VenueSalonState extends State<VenueSalon> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      body: new Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          mainAxisSize: MainAxisSize.max,
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(left: 21, top: 57),
-              child: new Text( "Venue", style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                fontFamily: "Montserrat",
-                color: Color(0xFF000000),
-              ),),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left: 32),
-              child: new Row(
-                children: <Widget>[
-                  IconButton(
-                      icon: Icon(Icons.arrow_back_ios),
-                      onPressed: null
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left:0),
-                    child: new Text( "1 Jan 2019, Monday", style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                      fontFamily: "Montserrat",
-                      color: Color(0xFF000000),
-                    ),),
-                  ),
-                  IconButton(
-                      icon: Icon(Icons.arrow_forward_ios),
-                      onPressed: null
-                  ),
-                ],
+      body: SingleChildScrollView(
+        child: new Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.max,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(left: 21, top: 57),
+                child: new Text( "Venue", style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Montserrat",
+                  color: Color(0xFF000000),
+                ),),
               ),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left:23, top:17.2),
-              child: new Container(
-                  width: 328,
-                  height:218,
-                  decoration: new BoxDecoration(border: Border.all(color: Colors.grey)),
-                  child: new Container()),
-            ),
-            Padding(
-              padding: const EdgeInsets.only(left:21, top:19),
-              child: new Text( "Seat 1", style: TextStyle(
-                fontSize: 14,
-                fontWeight: FontWeight.bold,
-                fontFamily: "Montserrat",
-                color: Color(0xFF4A4A4A),
-              ),),
-            ),
-            _buildTimeSlotRow(),
-            _buildBlockedTimeSlotRow(),
-            _buildTimeSlotRow(),
-          ]
+              Padding(
+                padding: const EdgeInsets.only(left: 32),
+                child: new Row(
+                  children: <Widget>[
+                    IconButton(
+                        icon: Icon(Icons.arrow_back_ios),
+                        onPressed: null
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left:0),
+                      child: new Text( "1 Jan 2019, Monday", style: TextStyle(
+                        fontSize: 14,
+                        fontWeight: FontWeight.w400,
+                        fontFamily: "Montserrat",
+                        color: Color(0xFF000000),
+                      ),),
+                    ),
+                    IconButton(
+                        icon: Icon(Icons.arrow_forward_ios),
+                        onPressed: null
+                    ),
+                  ],
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left:23, top:17.2),
+                child: new Container(
+                    width: 328,
+                    height:218,
+                    decoration: new BoxDecoration(border: Border.all(color: Colors.grey)),
+                    child: new Container()),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left:21, top:19),
+                child: new Text( "Seat 1", style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "Montserrat",
+                  color: Color(0xFF4A4A4A),
+                ),),
+              ),
+              _buildTimeSlotRow(),
+              _buildBlockedTimeSlotRow(),
+              _buildTimeSlotRow(),
+            ]
+        ),
       ),
     );
   }

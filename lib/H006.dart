@@ -12,7 +12,7 @@ class _H006State extends State<H006> {
   Widget build(BuildContext context) {
     return new Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(22.0),
+        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 60),
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,

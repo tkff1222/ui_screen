@@ -11,11 +11,10 @@ class _ExploreSalonState extends State<ExploreSalon> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(left: 21),
-        child: ListView(
-            children: <Widget>[
-              new Column(
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.only(top:57, left: 21),
+          child: new Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
@@ -41,10 +40,15 @@ class _ExploreSalonState extends State<ExploreSalon> {
                 _buildRowViewPhoto(),
                 SizedBox(height: 2),
                 _buildRowViewPhoto(),
+                SizedBox(height: 2),
+                _buildRowViewPhoto(),
+                SizedBox(height: 2),
+                _buildRowViewPhoto(),
+                SizedBox(height: 2),
+                _buildRowViewPhoto(),
               ]
-              )
-            ]
-        )
+          )
+          ),
       )
     );
   }

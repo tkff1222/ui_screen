@@ -11,39 +11,41 @@ class _PeopleSalonState extends State<PeopleSalon> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      body: Padding(
-        padding: const EdgeInsets.only(left: 21, top:57),
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            new Text("Directory", style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              fontFamily: "Montserrat",
-              color: Color(0xFF000000),
-            ),),
-            SizedBox(height: 23.0),
-            new Text( "Hairstylist (4)", style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.bold,
-              fontFamily: "Montserrat",
-              color: Color(0xFF4A4A4A),
-            ),),
-            _buildProfileRow(),
-            _buildProfileRow(),
-            _buildProfileRow(),
-            _buildProfileRow(),
-            SizedBox(height: 34.5),
-            new Text( "Technician (2)", style: TextStyle(
-              fontSize: 14,
-              fontWeight: FontWeight.bold,
-              fontFamily: "Montserrat",
-              color: Color(0xFF4A4A4A),
-            ),),
-            _buildProfileRow(),
-            _buildProfileRow(),
-          ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.only(left: 21, top:57),
+          child: new Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              new Text("Directory", style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                fontFamily: "Montserrat",
+                color: Color(0xFF000000),
+              ),),
+              SizedBox(height: 23.0),
+              new Text( "Hairstylist (4)", style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                fontFamily: "Montserrat",
+                color: Color(0xFF4A4A4A),
+              ),),
+              _buildProfileRow(),
+              _buildProfileRow(),
+              _buildProfileRow(),
+              _buildProfileRow(),
+              SizedBox(height: 34.5),
+              new Text( "Technician (2)", style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                fontFamily: "Montserrat",
+                color: Color(0xFF4A4A4A),
+              ),),
+              _buildProfileRow(),
+              _buildProfileRow(),
+            ],
+          ),
         ),
       ),
     );
