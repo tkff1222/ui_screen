@@ -18,6 +18,7 @@ import 'package:ui_screen/RegisterSalon.dart';
 import 'package:ui_screen/RegisterSalon2.dart';
 import 'package:ui_screen/SA001.dart';
 import 'package:ui_screen/SalonLandingScreen.dart';
+import 'package:ui_screen/Settings.dart';
 import 'package:ui_screen/SignUpSalon.dart';
 import 'package:ui_screen/TestScreen.dart';
 import 'package:ui_screen/VenueSalon.dart';
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
       //home:SalonLandingScreen(),
       //home: SA001(),
-      home: C005(),
+      home: Settings(),
     );
   }
 }
