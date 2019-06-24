@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ui_screen/ArroC002.dart';
+import 'package:ui_screen/C003.dart';
+import 'package:ui_screen/C004.dart';
+import 'package:ui_screen/C005.dart';
 import 'package:ui_screen/ExploreSalon.dart';
 import 'package:ui_screen/H003.dart';
 import 'package:ui_screen/H006.dart';
@@ -42,7 +45,7 @@ class MyApp extends StatelessWidget {
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
       //home:SalonLandingScreen(),
       //home: SA001(),
-      home: ArroC002(),
+      home: C005(),
     );
   }
 }
