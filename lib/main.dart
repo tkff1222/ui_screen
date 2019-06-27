@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:ui_screen/ArroA002.dart';
 import 'package:ui_screen/ArroC002.dart';
+import 'package:ui_screen/ArroC003.dart';
+import 'package:ui_screen/ArroC004.dart';
+import 'package:ui_screen/ArroC005.dart';
 import 'package:ui_screen/ArroEditCafeInfo.dart';
 import 'package:ui_screen/ArroEditCafeInfo2.dart';
 import 'package:ui_screen/ArroEditPhotos.dart';
@@ -51,7 +54,7 @@ class MyApp extends StatelessWidget {
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
       //home:SalonLandingScreen(),
       //home: SA001(),
-      home: ArroA002(),
+      home: ArroC005(),
     );
   }
 }
