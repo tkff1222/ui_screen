@@ -8,6 +8,9 @@ import 'package:ui_screen/ArroEditCafeInfo.dart';
 import 'package:ui_screen/ArroEditCafeInfo2.dart';
 import 'package:ui_screen/ArroEditPhotos.dart';
 import 'package:ui_screen/ArroEditProfile.dart';
+import 'package:ui_screen/ArroSettings2.dart';
+import 'package:ui_screen/ArroSettings3.dart';
+import 'package:ui_screen/ArroSettings4.dart';
 import 'package:ui_screen/C003.dart';
 import 'package:ui_screen/C004.dart';
 import 'package:ui_screen/C005.dart';
@@ -54,7 +57,7 @@ class MyApp extends StatelessWidget {
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
       //home:SalonLandingScreen(),
       //home: SA001(),
-      home: ArroC005(),
+      home: ArroSettings4(),
     );
   }
 }
