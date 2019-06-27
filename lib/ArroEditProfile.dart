@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Settings extends StatefulWidget {
-  Settings({Key key}) : super(key: key);
+class ArroEditProfile extends StatefulWidget {
+  ArroEditProfile({Key key}) : super(key: key);
 
   @override
-  _SettingsState createState() => new _SettingsState();
+  _ArroEditProfileState createState() => new _ArroEditProfileState();
 }
 
-class _SettingsState extends State<Settings> {
+class _ArroEditProfileState extends State<ArroEditProfile> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(

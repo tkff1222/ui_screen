@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:ui_screen/ArroA002.dart';
 import 'package:ui_screen/ArroC002.dart';
+import 'package:ui_screen/ArroEditCafeInfo.dart';
+import 'package:ui_screen/ArroEditCafeInfo2.dart';
+import 'package:ui_screen/ArroEditPhotos.dart';
+import 'package:ui_screen/ArroEditProfile.dart';
 import 'package:ui_screen/C003.dart';
 import 'package:ui_screen/C004.dart';
 import 'package:ui_screen/C005.dart';
@@ -18,7 +23,7 @@ import 'package:ui_screen/RegisterSalon.dart';
 import 'package:ui_screen/RegisterSalon2.dart';
 import 'package:ui_screen/SA001.dart';
 import 'package:ui_screen/SalonLandingScreen.dart';
-import 'package:ui_screen/Settings.dart';
+//import 'package:ui_screen/Settings.dart';
 import 'package:ui_screen/SignUpSalon.dart';
 import 'package:ui_screen/TestScreen.dart';
 import 'package:ui_screen/VenueSalon.dart';
@@ -46,7 +51,7 @@ class MyApp extends StatelessWidget {
       //home: MyHomePage(title: 'Flutter Demo Home Page'),
       //home:SalonLandingScreen(),
       //home: SA001(),
-      home: Settings(),
+      home: ArroA002(),
     );
   }
 }

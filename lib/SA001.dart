@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+//import 'package:flutter_svg/flutter_svg.dart';
 
 class SA001 extends StatefulWidget {
   SA001({Key key}) : super(key: key);
@@ -340,18 +340,18 @@ class _SA001State extends State<SA001>
             ],
           ),
         ),
-        new Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            new SvgPicture.network(
-              'https://storage.googleapis.com/gmapp/path7path.svg',
-              width: 6.22,
-              height: 12.02,
-              allowDrawingOutsideViewBox: true,
-            ),
-          ],
-        )
+//        new Column(
+//          mainAxisAlignment: MainAxisAlignment.start,
+//          crossAxisAlignment: CrossAxisAlignment.start,
+//          children: <Widget>[
+//            new SvgPicture.network(
+//              'https://storage.googleapis.com/gmapp/path7path.svg',
+//              width: 6.22,
+//              height: 12.02,
+//              allowDrawingOutsideViewBox: true,
+//            ),
+//          ],
+//        )
       ],
     );
   }
